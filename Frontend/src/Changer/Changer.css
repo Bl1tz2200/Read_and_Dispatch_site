@@ -1,0 +1,335 @@
+#rootChanger{
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(180deg, rgba(255, 69, 0, 1), rgba(255, 255, 255, 0.9));
+
+    z-index: 0;
+}
+
+.inputPasswordChanger,
+.inputNewPassword {
+
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0 1px 2px orangered;
+
+    position: absolute;
+
+    border-color: orangered;
+
+    outline: none;
+
+    padding: 0;
+
+    transition: all 0.8s;
+
+}
+
+.inputPasswordChanger:hover,
+.inputNewPassword:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputPasswordChanger:focus,
+.inputNewPassword:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+
+.passwordChanger,
+.newPassword {
+    position: absolute;
+
+    transition: all 1s;
+
+    pointer-events: none;
+}
+
+.inputPasswordChanger:hover+i,
+.inputNewPassword:hover+i {
+    transform: scale(1.05);
+    color: orangered;
+}
+
+.mainPageChanger {
+
+    background-color: white;
+
+    z-index: 1;
+
+    overflow: hidden;
+
+    position: absolute;
+    display: block;
+
+    outline: 1.5px solid orangered;
+
+    transition: all 1s;
+
+    word-break: break-all;
+
+    border-radius: 2.5vw;
+
+    box-shadow: 0 2px 10vw rgba(0, 0, 0, 0.8);
+}
+
+.mainPageChanger h1,
+.mainPageChanger h3 {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+}
+
+.ChangeChanger {
+    background-color: orangered;
+    color: white;
+
+    position: absolute;
+
+    border-radius: 0.5vw;
+
+    border-color: orangered;
+
+    padding: 0;
+
+    transition: all 0.5s;
+
+    box-shadow: 0 4px 10px orangered;
+}
+
+.ChangeChanger:hover {
+    transform: scale(1.1);
+}
+
+.ChangeChanger:active {
+    border-color: white;
+    background-color: white;
+    color: orangered;
+}
+
+.incorrectChanger {
+    color: red !important;
+    transform: scale(1.25) !important;
+}
+
+
+@media (min-width:1025px) {
+    #rootChanger {
+        --mainPage-width: 30vw;
+        --mainPage-height: 22vw;
+    }
+
+    .inputPasswordChanger {
+        width: 22.5vw;
+        height: 2.75vw;
+
+        left: calc(50% - 11.25vw);
+        font-size: 2.5vw;
+
+        top: 6.5vw;
+    }
+
+    .passwordChanger {
+        left: 4vw;
+        font-size: 1.25vw;
+        top: 4.75vw;
+    }
+
+    .inputNewPassword {
+        width: 22.5vw;
+        height: 2.75vw;
+
+        left: calc(50% - 11.25vw);
+        font-size: 2.5vw;
+
+        top: 12vw;
+    }
+
+    .newPassword {
+        left: 4vw;
+        font-size: 1.25vw;
+        top: 10.2vw;
+    }
+
+    .mainPageChanger {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageChanger h1 {
+        top: 0.5vw;
+
+        left: 1vw;
+        font-size: 2.75vw;
+    }
+
+    .mainPageChanger h3 {
+        top: 21vw;
+
+
+        left: 7.5vw;
+        font-size: 2vw;
+    }
+
+    .ChangeChanger {
+        width: 15vw;
+        height: 4vw;
+
+        top: 16vw;
+        left: calc(50% - 7.5vw);
+
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width:1025px) {
+    #rootChanger {
+        --mainPage-width: 45vw;
+        --mainPage-height: 32.5vw;
+    }
+
+    .inputPasswordChanger {
+
+        width: 33.75vw;
+        height: 4vw;
+
+        left: calc(50% - 16.875vw);
+        font-size: 3.75vw;
+
+        top: 9.5vw;
+    }
+
+    .passwordChanger {
+        left: 6vw;
+        font-size: 1.5vw;
+        top: 7.5vw;
+    }
+
+    .inputNewPassword {
+        width: 33.75vw;
+        height: 4vw;
+
+        left: calc(50% - 16.875vw);
+        font-size: 3.75vw;
+
+        top: 17vw;
+    }
+
+    .newPassword {
+        left: 6vw;
+        font-size: 1.5vw;
+        top: 14.9vw;
+    }
+
+    .mainPageChanger {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageChanger h1 {
+        top: 1vw;
+
+        left: 1vw;
+        font-size: 4.25vw;
+    }
+
+    .mainPageChanger h3 {
+        top: 30vw;
+
+        left: 11vw;
+        font-size: 3vw;
+    }
+
+    .ChangeChanger {
+        width: 22.5vw;
+        height: 6vw;
+
+        top: 23vw;
+        left: calc(50% - 11.25vw);
+
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width:480px) {
+    #rootChanger {
+        --mainPage-width: 60vw;
+        --mainPage-height: 44vw;
+    }
+
+    .inputPasswordChanger {
+        width: 45vw;
+
+        height: 5vw;
+
+        left: calc(50% - 22.5vw);
+        font-size: 4vw;
+
+        top: 12vw;
+    }
+
+    .passwordChanger {
+        left: 8vw;
+        font-size: 2vw;
+        top: 9.3vw;
+    }
+
+    .inputNewPassword {
+        width: 45vw;
+
+        height: 5vw;
+
+        left: calc(50% - 22.5vw);
+        font-size: 4vw;
+
+        top: 22vw;
+    }
+
+    .newPassword {
+        left: 8vw;
+        font-size: 2vw;
+        top: 19.25vw;
+    }
+
+    .mainPageChanger {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageChanger h1 {
+        top: 2vw;
+        left: 2vw;
+        font-size: 5.5vw;
+    }
+
+    .mainPageChanger h3 {
+        top: 41vw;
+        left: 14.75vw;
+        font-size: 4vw;
+    }
+
+    .ChangeChanger {
+        width: 30vw;
+        height: 8vw;
+
+        top: 31vw;
+        left: calc(50% - 15vw);
+
+        font-size: 6vw;
+    }
+}

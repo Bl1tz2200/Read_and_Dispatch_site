@@ -1,0 +1,284 @@
+#rootReset {
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(0, rgba(255, 69, 0, 1), rgba(255, 255, 255, 0.9));
+
+    z-index: 0;
+}
+
+.inputEmailReset {
+
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0 1px 2px orangered;
+
+    position: absolute;
+
+    border-color: orangered;
+
+    outline: none;
+
+    padding: 0;
+
+    transition: all 0.8s;
+
+}
+
+.inputEmailReset:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputEmailReset:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+
+.emailReset {
+    position: absolute;
+
+    transition: all 1s;
+
+    pointer-events: none;
+}
+
+.inputEmailReset:hover+i {
+    transform: scale(1.05);
+    color: orangered;
+}
+
+.mainPageReset {
+
+    background-color: white;
+
+    z-index: 1;
+
+    overflow: hidden;
+
+    position: absolute;
+    display: block;
+
+    outline: 1.5px solid orangered;
+
+    transition: all 1s;
+
+    word-break: break-all;
+
+    border-radius: 2.5vw;
+
+    box-shadow: 0 2px 10vw rgba(0, 0, 0, 0.8);
+}
+
+.mainPageReset h1,
+.mainPageReset h4 {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+}
+
+.mainPageReset h4 {
+    cursor: pointer;
+}
+
+.Reset {
+    background-color: orangered;
+    color: white;
+
+    position: absolute;
+
+    border-radius: 0.5vw;
+
+    border-color: orangered;
+
+    padding: 0;
+
+    transition: all 0.5s;
+
+    box-shadow: 0 4px 10px orangered;
+}
+
+.Reset:hover {
+    transform: scale(1.1);
+}
+
+.Reset:active {
+    border-color: white;
+    background-color: white;
+    color: orangered;
+}
+
+.incorrectReset {
+    transform: scale(1.5) !important;
+    color: red !important;
+}
+
+@media (min-width:1025px) {
+    #rootReset {
+        --mainPage-width: 30vw;
+        --mainPage-height: 25vw;
+    }
+
+    .inputEmailReset {
+        width: 22.5vw;
+        height: 2.75vw;
+
+        left: calc(50% - 11.25vw);
+        font-size: 2.5vw;
+
+        top: 7.5vw;
+    }
+
+    .emailReset {
+        left: 4vw;
+        font-size: 1.25vw;
+        top: 5.5vw;
+    }
+
+    .mainPageReset {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageReset h1 {
+        top: 1vw;
+
+        left: 1.5vw;
+        font-size: 3vw;
+    }
+
+    .mainPageReset h4 {
+        top: 18vw;
+
+        left: calc(50% - 6vw);
+        font-size: 3vw;
+    }
+
+    .Reset {
+        width: 15vw;
+        height: 4vw;
+
+        top: 12vw;
+        left: calc(50% - 7.5vw);
+
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width:1025px) {
+    #rootReset {
+        --mainPage-width: 45vw;
+        --mainPage-height: 37.5vw;
+    }
+
+    .inputEmailReset {
+
+        width: 33.75vw;
+        height: 4vw;
+
+        left: calc(50% - 16.875vw);
+        font-size: 3.75vw;
+
+        top: 11.5vw;
+    }
+
+    .emailReset {
+        left: 6vw;
+        font-size: 1.5vw;
+        top: 9.5vw;
+    }
+
+    .mainPageReset {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageReset h1 {
+        top: 1vw;
+
+        left: 1.5vw;
+        font-size: 4.75vw;
+    }
+
+    .mainPageReset h4 {
+        top: 27vw;
+
+        left: calc(50% - 10vw);
+        font-size: 5vw;
+    }
+
+    .Reset {
+        width: 22.5vw;
+        height: 6vw;
+
+        top: 18.25vw;
+        left: calc(50% - 11.25vw);
+
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width:480px) {
+    #rootReset {
+        --mainPage-width: 60vw;
+        --mainPage-height: 50vw;
+    }
+
+    .inputEmailReset {
+        width: 45vw;
+
+        height: 5vw;
+
+        left: calc(50% - 22.5vw);
+        font-size: 4vw;
+
+        top: 15vw;
+    }
+
+    .emailReset {
+        left: 8vw;
+        font-size: 2vw;
+        top: 12vw;
+    }
+
+    .mainPageReset {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageReset h1 {
+        top: 2vw;
+        left: 3.25vw;
+        font-size: 6vw;
+    }
+
+    .mainPageReset h4 {
+        top: 36.75vw;
+
+        left: calc(50% - 14vw);
+        font-size: 7vw;
+    }
+
+    .Reset {
+        width: 30vw;
+        height: 8vw;
+
+        top: 25vw;
+        left: calc(50% - 15vw);
+
+        font-size: 6vw;
+    }
+}

@@ -1,0 +1,367 @@
+#rootLogin {
+  height: 100%;
+  width: 100%;
+
+  background-image: linear-gradient(90deg, rgba(255, 69, 0, 1), rgba(255, 255, 255, 0.9));
+
+  z-index: 0;
+}
+
+.incorrectLogin {
+  color: red;
+  transform: scale(1.2);
+}
+
+.inputLogin,
+.inputPassword {
+
+  background-color: rgb(255, 255, 255);
+
+  box-shadow: 0 1px 2px orangered;
+
+  position: absolute;
+
+  border-color: orangered;
+
+  outline: none;
+
+  padding: 0;
+
+  transition: all 0.8s;
+
+}
+
+.inputLogin:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.inputLogin:focus {
+  border-color: white;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.inputPassword:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.inputPassword:focus {
+  border-color: white;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.username,
+.password {
+  position: absolute;
+
+  transition: all 1s;
+
+  pointer-events: none;
+}
+
+.inputLogin:hover + i {
+  transform: scale(1.05);
+  color: orangered;
+}
+
+.inputPassword:hover + i {
+  transform: scale(1.05);
+  color: orangered;
+}
+
+.mainPage {
+
+  background-color: white;
+
+  z-index: 1;
+
+  overflow: hidden;
+
+  position: absolute;
+  display: block;
+
+  outline: 1.5px solid orangered;
+
+  transition: all 1s;
+
+  word-break: break-all;
+
+  border-radius: 2.5vw;
+
+  box-shadow: 0 2px 10vw rgba(0, 0, 0, 0.8);
+}
+
+.mainPage h1,
+.mainPage h2,
+.mainPage h3 {
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+}
+
+.LogIn {
+  background-color: orangered;
+  color: white;
+
+  position: absolute;
+
+  border-radius: 0.5vw;
+
+  border-color: orangered;
+
+  padding: 0;
+
+  transition: all 0.5s;
+
+  box-shadow: 0 4px 10px orangered;
+}
+
+.LogIn:hover {
+  transform: scale(1.1);
+}
+
+.LogIn:active {
+  border-color: white;
+  background-color: white;
+  color: orangered;
+}
+
+
+@media (min-width:1025px) {
+  #rootLogin {
+    --mainPage-width: 30vw;
+    --mainPage-height: 34vw;
+  }
+
+  .inputLogin,
+  .inputPassword {
+    width: 22.5vw;
+    height: 3.5vw;
+  
+    left: calc(50% - 11.25vw);
+    font-size: 2.5vw;
+  }
+
+  .inputLogin {
+    top: 9vw;
+  }
+
+  .inputPassword {
+    top: 15vw;
+  }
+
+  .username,
+  .password {
+    left: 4vw;
+    font-size: 1.25vw;
+  }
+
+  .username {
+    top: 7.25vw;
+  }
+  
+  .password {
+    top: 13.25vw;
+  }
+
+  .mainPage {
+    height: var(--mainPage-height);
+    width: var(--mainPage-width);
+  
+    left: calc(50% - var(--mainPage-width)/2);
+    top: calc(50% - var(--mainPage-height)/2);
+  }
+  
+  .mainPage h1 {
+    top: 0.5vw;
+  
+    left: calc(50% - 6.5vw);
+    font-size: 5vw;
+  }
+  
+  .mainPage h2 {
+    top: 26vw;
+  
+    left: 0.75vw;
+    font-size: 2vw;
+  }
+  
+  .mainPage h3 {
+    top: 29.5vw;
+
+  
+    left: 6.5vw;
+    font-size: 2vw;
+  }
+  
+  .LogIn {
+    width: 15vw;
+    height: 4vw;
+  
+    top: 20.5vw;
+    left: calc(50% - 7.5vw);
+  
+    font-size: 3vw;
+  }
+}
+
+@media (max-width:1025px) {
+  #rootLogin {
+    --mainPage-width: 45vw;
+    --mainPage-height: 50vw;
+  }
+
+  .inputLogin,
+  .inputPassword {
+    width: 33.75vw;
+    height: 5.25vw;
+  
+    left: calc(50% - 16.875vw);
+    font-size: 3.75vw;
+  }
+
+  .inputLogin {
+    top: 13.5vw;
+  }
+
+  .inputPassword {
+    top: 22.5vw;
+  }
+
+  .username,
+  .password {
+    left: 6vw;
+    font-size: 1.5vw;
+  }
+
+  .username {
+    top: 11.25vw;
+  }
+  
+  .password {
+    top: 20.25vw;
+  }
+
+  .mainPage {
+    height: var(--mainPage-height);
+    width: var(--mainPage-width);
+  
+    left: calc(50% - var(--mainPage-width)/2);
+    top: calc(50% - var(--mainPage-height)/2);
+  }
+  
+  .mainPage h1 {
+    top: 1vw;
+  
+    left: calc(50% - 9.5vw);
+    font-size: 7.5vw;
+  }
+  
+  .mainPage h2 {
+    top: 39vw;
+  
+    left: 1vw;
+    font-size: 3vw;
+  }
+  
+  .mainPage h3 {
+    top: 44.25vw;
+
+  
+    left: 9.75vw;
+    font-size: 3vw;
+  }
+  
+  .LogIn {
+    width: 22.5vw;
+    height: 6vw;
+  
+    top: 31vw;
+    left: calc(50% - 11.25vw);
+  
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width:480px) {
+  #rootLogin {
+    --mainPage-width: 60vw;
+    --mainPage-height: 65vw;
+  }
+
+
+  .inputLogin,
+  .inputPassword {
+    width: 45vw;
+    height: 6vw;
+
+    left: calc(50% - 22.5vw);
+    font-size: 4vw;
+  }
+
+  .inputLogin {
+    top: 19vw;
+  }
+
+  .inputPassword {
+    top: 30vw;
+  }
+
+  .username,
+  .password {
+    left: 8vw;
+    font-size: 2.5vw;
+  }
+
+  .username {
+    top: 15.5vw;
+  }
+  
+  .password {
+    top: 26.5vw;
+  }
+
+  .mainPage {
+    height: var(--mainPage-height);
+    width: var(--mainPage-width);
+  
+    left: calc(50% - var(--mainPage-width)/2);
+    top: calc(50% - var(--mainPage-height)/2);
+  }
+  
+  .mainPage h1 {
+    top: 1vw;
+  
+    left: calc(50% - 14vw);
+    font-size: 10vw;
+  }
+  
+  .mainPage h2 {
+    top: 50.75vw;
+  
+    left: 1.5vw;
+    font-size: 4vw;
+  }
+  
+  .mainPage h3 {
+    top: 57vw;
+
+  
+    left: 12vw;
+    font-size: 4vw;
+  }
+  
+  .LogIn {
+    width: 30vw;
+    height: 8vw;
+  
+    top: 40.5vw;
+    left: calc(50% - 15vw);
+  
+    font-size: 6vw;
+  }
+}

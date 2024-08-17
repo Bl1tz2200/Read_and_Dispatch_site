@@ -1,0 +1,504 @@
+#rootDispatch {
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(90deg, rgba(255, 69, 0, 1), rgba(255, 255, 255, 0.9), rgba(255, 69, 0, 1));
+
+    z-index: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.inputTitleDispatch,
+.inputDescriptionDispatch,
+.inputBodyDispatch {
+
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0 1px 2px orangered;
+
+    position: absolute;
+
+    border-color: orangered;
+
+    outline: none;
+
+    padding: 0;
+
+    transition: all 0.8s;
+
+    word-break: normal;
+}
+
+.inputTitleDispatch:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputTitleDispatch:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputDescriptionDispatch:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputDescriptionDispatch:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputBodyDispatch:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputBodyDispatch:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+#image1 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px orangered;
+
+    background-repeat: no-repeat;
+
+
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid orangered;
+    position: absolute;
+    z-index: 10;
+
+    background-position: center;
+
+    transition: all 0.8s;
+}
+
+#image1:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+#image1:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputTitleDispatch {
+    position: absolute;
+
+    width: 80%;
+    height: 4.5%;
+
+    text-indent: 1vw;
+    text-align: center;
+
+    left: calc(50% - 40%);
+}
+
+.inputDescriptionDispatch {
+    position: absolute;
+
+    width: 80%;
+    height: 11%;
+
+    padding: 0.5vw;
+
+    left: calc(50% - 40% - 0.25vw);
+}
+
+.inputBodyDispatch {
+    position: absolute;
+
+    width: 80%;
+    height: 35%;
+
+    padding: 0.5vw;
+
+    left: calc(50% - 40% - 0.25vw);
+}
+
+.mainPageDispatch {
+
+    height: 90%;
+    width: 80%;
+
+    background-color: white;
+
+    z-index: 1;
+
+    overflow: hidden;
+
+    position: absolute;
+    display: block;
+
+    outline: 1.5px solid orangered;
+
+    transition: all 1s;
+
+    word-break: break-all;
+
+    border-radius: 2.5vw;
+
+    box-shadow: 0 0 8vw rgba(0, 0, 0, 0.8);
+}
+
+.mainPageDispatch h1,
+.mainPageDispatch h3 {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Dispatch {
+    background-color: orangered;
+    color: white;
+
+    position: absolute;
+
+    border-radius: 0.5vw;
+
+    border-color: orangered;
+
+    padding: 0;
+
+    transition: all 0.5s;
+
+    box-shadow: 0 4px 10px orangered;
+
+    display: none;
+}
+
+.Dispatch:hover {
+    transform: scale(1.1);
+}
+
+.Dispatch:active {
+    border-color: white;
+    background-color: white;
+    color: orangered;
+}
+
+.headerDispatch {
+    background-color: rgb(255, 255, 255);
+
+    width: 80%;
+    height: 10%;
+
+    left: 10%;
+    top: 5%;
+
+    outline: 1.5px solid orangered;
+    border-top-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+
+    position: absolute;
+
+    z-index: 10;
+}
+
+.headerDispatch h3 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.textEdit {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+}
+
+.checkSave {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    transform: translateY(-10%);
+}
+
+.checkSave:checked~input {
+    display: block;
+}
+
+::file-selector-button {
+    display: none;
+}
+
+#image1 {
+    pointer-events: none;
+    font-size: 0;
+}
+
+#image1:focus {
+    font-size: 1rem;
+}
+
+@media (min-width:1025px) {
+
+    #image1 {
+        background-size: 30vw;
+
+        width: 30vw;
+        height: 30vw;
+
+        left: calc(22.5% - 15vw);
+        top: calc(52.5% - 15vw);
+    }
+
+    .inputTitleDispatch {
+        font-size: 2vw;
+
+        top: calc(20% - 2.5vw);
+        left: 45%;
+        width: 50%;
+    }
+
+    .inputDescriptionDispatch {
+        font-size: 2vw;
+
+        top: calc(27.5% - 2.5vw);
+        width: 50%;
+        left: 44.5%;
+    }
+
+    .inputBodyDispatch {
+        width: 50%;
+        height: 55%;
+
+        padding: 0.5vw;
+
+        font-size: 2vw;
+
+        top: calc(43.5% - 2.5vw);
+        left: 44.5%;
+    }
+
+    .mainPageDispatch {
+
+        height: 90%;
+        width: 80%;
+
+        left: 10%;
+        top: 5%;
+    }
+
+    .Dispatch {
+        height: 4.5vw;
+
+        top: calc(50% - 2.25vw);
+        right: 5%;
+
+        font-size: 3.75vw;
+    }
+
+    #deleteDispatch {
+        right: calc(5% + 10vw);
+    }
+
+    .headerDispatch h3 {
+        left: 40%;
+        top: 0;
+
+        font-size: 4vw;
+    }
+
+    .textEdit {
+        top: calc(50% - 3.25vw);
+        left: 9%;
+
+        font-size: 4.5vw;
+    }
+
+    .checkSave {
+        left: 16.75vw;
+        top: 34%;
+
+        width: 5vw;
+        height: 5vh;
+
+        transform: translateY(-10%);
+    }
+}
+
+
+@media (max-width:1025px) {
+
+    #image1 {
+        background-size: 25vh;
+
+        width: 25vh;
+        height: 25vh;
+
+        left: calc(50% - 12.25vh);
+        top: 11.75%;
+    }
+
+    .inputTitleDispatch {
+        font-size: 3vw;
+
+        top: calc(43% - 2.5vw);
+    }
+
+    .inputDescriptionDispatch {
+        font-size: 3vw;
+
+        top: calc(50% - 2.5vw);
+    }
+
+    .inputBodyDispatch {
+        width: 80%;
+        height: 35%;
+
+        padding: 0.5vw;
+
+        font-size: 3vw;
+
+        top: calc(65% - 2.5vw);
+    }
+
+    .mainPageDispatch {
+
+        height: 90%;
+        width: 80%;
+
+        left: 10%;
+        top: 5%;
+    }
+
+    .Dispatch {
+        height: 6vw;
+
+        top: calc(50% - 2.75vw);
+        right: 4%;
+
+        font-size: 4.5vw;
+    }
+
+    #deleteDispatch {
+        right: calc(5% + 11vw);
+    }
+
+    .headerDispatch h3 {
+        left: 40%;
+        top: calc(15% + 1vh);
+
+        font-size: 4vw;
+    }
+
+    .textEdit {
+        top: calc(50% - 3vw);
+        left: 8%;
+
+        font-size: 4.5vw;
+    }
+
+    .checkSave {
+        left: 16.75vw;
+        top: 34%;
+
+        width: 5vw;
+        height: 5vh;
+
+        transform: translateY(-10%);
+    }
+}
+
+@media (max-width:480px) {
+
+    #image1 {
+        background-size: 42.5vw;
+
+        width: 25vh;
+        height: 25vh;
+
+        left: calc(50% - 12.5vh);
+        top: 12.25%;
+    }
+
+    .inputTitleDispatch {
+        font-size: 3vw;
+
+        top: calc(43% - 2.5vw);
+    }
+
+    .inputDescriptionDispatch {
+        font-size: 3vw;
+
+        top: 47.5%;
+    }
+
+    .inputBodyDispatch {
+        width: 80%;
+        height: 35%;
+
+        padding: 0.5vw;
+
+        font-size: 3vw;
+
+        top: 60.5%;
+    }
+
+    .mainPageDispatch {
+
+        height: 90%;
+        width: 80%;
+
+        left: 10%;
+        top: 5%;
+    }
+
+    .Dispatch {
+        height: 10vw;
+
+        top: 22.5%;
+        right: 4%;
+
+        font-size: 4.5vw;
+
+        border-radius: 10px;
+    }
+
+    #deleteDispatch {
+        right: calc(5% + 12vw);
+    }
+
+    .headerDispatch h3 {
+        left: 35%;
+        top: 32.5%;
+
+        font-size: 5vw;
+    }
+
+    .textEdit {
+        top: 30%;
+        left: 7%;
+
+        font-size: 6vw;
+    }
+
+    .checkSave {
+        left: 20vw;
+        top: 30%;
+
+        width: 5vw;
+        height: 5vh;
+
+        transform: translateY(-10%);
+    }
+}

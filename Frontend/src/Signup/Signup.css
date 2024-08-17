@@ -1,0 +1,438 @@
+#rootSignUp {
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(-90deg, rgba(255, 69, 0, 1), rgba(255, 255, 255, 0.9));
+
+    z-index: 0;
+}
+
+.incorrectSignup {
+    color: red;
+    transform: scale(1.1);
+}
+
+.inputLoginSignUp,
+.inputRepeatPassword,
+.inputEmail,
+.inputPasswordSignUp {
+
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0 1px 2px orangered;
+
+    position: absolute;
+
+    border-color: orangered;
+
+    outline: none;
+
+    padding: 0;
+
+    transition: all 0.8s;
+
+}
+
+.inputLoginSignUp:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputLoginSignUp:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputPasswordSignUp:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputPasswordSignUp:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputRepeatPassword:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputRepeatPassword:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputEmail:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.inputEmail:focus {
+    border-color: white;
+    box-shadow: 0 4px 10px orangered;
+}
+
+.usernameSignUp,
+.passwordSignUp,
+.email,
+.repeatpassword {
+    position: absolute;
+
+    transition: all 1s;
+
+    pointer-events: none;
+}
+
+.inputLoginSignUp:hover+i {
+    transform: scale(1.05);
+    color: orangered;
+}
+
+.inputPasswordSignUp:hover+i {
+    transform: scale(1.05);
+    color: orangered;
+}
+
+.inputRepeatPassword:hover+i {
+    transform: scale(1.05);
+    color: orangered;
+}
+
+.inputEmail:hover+i {
+    transform: scale(1.05);
+    color: orangered;
+}
+
+.mainPageSignUp {
+
+    background-color: white;
+
+    z-index: 1;
+
+    overflow: hidden;
+
+    position: absolute;
+    display: block;
+
+    outline: 1.5px solid orangered;
+
+    transition: all 1s;
+
+    word-break: break-all;
+
+    border-radius: 2.5vw;
+
+    box-shadow: 0 2px 10vw rgba(0, 0, 0, 0.8);
+}
+
+.mainPageSignUp h1,
+.mainPageSignUp h3 {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+}
+
+.SignUp {
+    background-color: orangered;
+    color: white;
+
+    position: absolute;
+
+    border-radius: 0.5vw;
+
+    border-color: orangered;
+
+    padding: 0;
+
+    transition: all 0.5s;
+
+    box-shadow: 0 4px 10px orangered;
+}
+
+.SignUp:hover {
+    transform: scale(1.1);
+}
+
+.SignUp:active {
+    border-color: white;
+    background-color: white;
+    color: orangered;
+}
+
+
+@media (min-width:1025px) {
+    #rootSignUp {
+        --mainPage-width: 30vw;
+        --mainPage-height: 35vw;
+    }
+
+    .inputLoginSignUp,
+    .inputPasswordSignUp,
+    .inputRepeatPassword,
+    .inputEmail {
+        width: 22.5vw;
+        height: 2.75vw;
+
+        left: calc(50% - 11.25vw);
+        font-size: 2.5vw;
+    }
+
+    .inputLoginSignUp {
+        top: 9vw;
+    }
+
+    .inputPasswordSignUp {
+        top: 14vw;
+    }
+
+    .inputRepeatPassword {
+        top: 19vw;
+    }
+
+    .inputEmail {
+        top: 24vw;
+    }
+
+    .usernameSignUp,
+    .passwordSignUp,
+    .email,
+    .repeatpassword {
+        left: 4vw;
+        font-size: 1.25vw;
+    }
+
+    .usernameSignUp {
+        top: 7.25vw;
+    }
+
+    .passwordSignUp {
+        top: 12.25vw;
+    }
+
+    .repeatpassword {
+        top: 17.25vw;
+    }
+
+    .email {
+        top: 22.25vw;
+    }
+
+    .mainPageSignUp {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageSignUp h1 {
+        top: 1vw;
+
+        left: calc(50% - 9vw);
+        font-size: 5vw;
+    }
+
+    .mainPageSignUp h3 {
+        top: 32vw;
+
+
+        left: 7.5vw;
+        font-size: 2vw;
+    }
+
+    .SignUp {
+        width: 15vw;
+        height: 4vw;
+
+        top: 27.75vw;
+        left: calc(50% - 7.5vw);
+
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width:1025px) {
+    #rootSignUp {
+        --mainPage-width: 45vw;
+        --mainPage-height: 52.5vw;
+    }
+
+    .inputLoginSignUp,
+    .inputPasswordSignUp,
+    .inputRepeatPassword,
+    .inputEmail {
+        width: 33.75vw;
+        height: 4vw;
+
+        left: calc(50% - 16.875vw);
+        font-size: 3.75vw;
+    }
+
+    .inputLoginSignUp {
+        top: 12vw;
+    }
+
+    .inputPasswordSignUp {
+        top: 19vw;
+    }
+
+    .inputRepeatPassword {
+        top: 26vw;
+    }
+
+    .inputEmail {
+        top: 33vw;
+    }
+
+    .usernameSignUp,
+    .passwordSignUp,
+    .email,
+    .repeatpassword {
+        left: 6vw;
+        font-size: 1.5vw;
+    }
+
+    .usernameSignUp {
+        top: 10vw;
+    }
+
+    .passwordSignUp {
+        top: 17vw;
+    }
+
+    .repeatpassword {
+        top: 24vw;
+    }
+
+    .email {
+        top: 31vw;
+    }
+
+    .mainPageSignUp {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageSignUp h1 {
+        top: 0.75vw;
+
+        left: calc(50% - 14vw);
+        font-size: 7.5vw;
+    }
+
+    .mainPageSignUp h3 {
+        top: 46.5vw;
+
+
+        left: 11vw;
+        font-size: 3vw;
+    }
+
+    .SignUp {
+        width: 22.5vw;
+        height: 6vw;
+
+        top: 40vw;
+        left: calc(50% - 11.25vw);
+
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width:480px) {
+    #rootSignUp {
+        --mainPage-width: 60vw;
+        --mainPage-height: 65vw;
+    }
+
+
+    .inputLoginSignUp,
+    .inputPasswordSignUp,
+    .inputRepeatPassword,
+    .inputEmail {
+        width: 45vw;
+        height: 5vw;
+
+        left: calc(50% - 22.5vw);
+        font-size: 4vw;
+    }
+
+    .inputLoginSignUp {
+        top: 15vw;
+    }
+
+    .inputPasswordSignUp {
+        top: 24vw;
+    }
+
+    .inputRepeatPassword {
+        top: 33vw;
+    }
+
+    .inputEmail {
+        top: 42vw;
+    }
+
+    .usernameSignUp,
+    .passwordSignUp,
+    .email,
+    .repeatpassword {
+        left: 8vw;
+        font-size: 2vw;
+    }
+
+    .usernameSignUp {
+        top: 12vw;
+    }
+
+    .passwordSignUp {
+        top: 21.5vw;
+    }
+
+    .repeatpassword {
+        top: 30.25vw;
+    }
+
+    .email {
+        top: 39.25vw;
+    }
+
+    .mainPageSignUp {
+        height: var(--mainPage-height);
+        width: var(--mainPage-width);
+
+        left: calc(50% - var(--mainPage-width)/2);
+        top: calc(50% - var(--mainPage-height)/2);
+    }
+
+    .mainPageSignUp h1 {
+        left: calc(50% - 18vw);
+        font-size: 10vw;
+    }
+
+    .mainPageSignUp h3 {
+        top: 58.5vw;
+        left: 14.75vw;
+        font-size: 4vw;
+    }
+
+    .SignUp {
+        width: 30vw;
+        height: 8vw;
+
+        top: 50vw;
+        left: calc(50% - 15vw);
+
+        font-size: 6vw;
+    }
+}

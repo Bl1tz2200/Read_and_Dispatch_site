@@ -1,0 +1,507 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  --logo-width-User: 5%;
+
+  --input-width-User: 80vw;
+  --input-height-User: 3vw;
+}
+
+.headerUser {
+  background-color: rgb(255, 255, 255);
+
+  width: 100%;
+
+  position: sticky;
+  top: 10vw;
+
+  box-shadow: 0 1px 2px orangered;
+
+  z-index: 1
+}
+
+.headerUser input {
+
+  text-indent: 0.5vw;
+  margin-left: 1%;
+
+  width: var(--input-width-User);
+  height: var(--input-height-User);
+
+  position: absolute;
+  top: calc(50% - var(--input-height-User)/2);
+  left: var(--logo-width);
+
+  border-color: orangered;
+  outline: none;
+
+  font-size: 2vw;
+  padding: 0;
+  display: block;
+
+  transition: all 0.8s;
+
+}
+
+.headerUser input:hover {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.headerUser input:focus {
+  border-color: white;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.headerUser .userNameUser {
+  position: absolute;
+
+  width: 11vw;
+
+  margin-left: calc(var(--logo-width-User) + var(--input-width-User) + 3vw);
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+
+  word-break: break-all;
+
+  font-size: 0.9vw;
+}
+
+.headerUser .userNameUser a {
+  color: #000;
+  text-decoration: none;
+
+  transition: all 0.5s;
+}
+
+.headerUser .userNameUser h1 {
+  padding: 0;
+  margin: 0;
+
+  transition: all 0.5s;
+
+  cursor: pointer;
+}
+
+.headerUser .userNameUser h1 a:hover {
+  color: orangered;
+  text-shadow: 1px 3px 2px #000;
+}
+
+.headerUser .logoUser,
+.animatedLogoUser {
+  width: var(--logo-width);
+  cursor: pointer;
+}
+
+.UserField {
+  background-color: white;
+  background-image: linear-gradient(to right, rgba(255, 69, 0, 0.8), rgba(255, 255, 255, 1), rgba(255, 69, 0, 0.8));
+
+  width: 100%;
+  height: 10vw;
+
+  left: 0.5%;
+
+  position: sticky;
+  top: 0vw;
+
+  outline: 2px solid orangered;
+
+  z-index: 2;
+}
+
+.UserField input {
+  cursor: pointer;
+
+  z-index: 100;
+}
+
+.UserField input[type="button"] {
+  transition: all 0.3s;
+}
+
+.UserField input[type="button"]:hover {
+  box-shadow: 0 2px 6px #000;
+}
+
+.UserField input[type="button"]:focus {
+  box-shadow: 0 2px 6px #000;
+}
+
+.UserField h1 {
+  top: 0.75vw;
+  position: absolute;
+  font-size: 2vw;
+  left: 1vw;
+  margin: 0;
+}
+
+.UserField h2 {
+  position: absolute;
+  font-size: 1.5vw;
+  left: 1vw;
+  top: 5vw;
+
+  background-color: white;
+  padding-right: 0.9vw;
+  padding-bottom: 0.3vw;
+
+  z-index: 1;
+}
+
+.UserField div {
+  background-color: white;
+  position: absolute;
+
+  border-radius: 5px;
+
+  height: 90%;
+  width: 19vw;
+  top: 0.5vw;
+
+  box-shadow: 0 2px 6px #000;
+
+  left: calc(30% - 10vw);
+
+  transition: all 1s;
+}
+
+.UserField div:hover {
+  transform: scale(1.025);
+}
+
+.UserField .check {
+  position: absolute;
+
+  width: 1.5vw;
+  height: 1.5vw;
+
+  z-index: 10;
+}
+
+.UserField .nameInputUser {
+  position: absolute;
+
+  pointer-events: none;
+
+  border: transparent solid;
+  outline: none;
+  width: 17vw;
+
+  font-size: 1.5vw;
+  padding: 0;
+
+  transition: all 0.8s;
+}
+
+.UserField .nameInputUser:hover {
+  border-radius: 5px;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.UserField .nameInputUser:focus {
+  border-color: white;
+  box-shadow: 0 4px 10px orangered;
+}
+
+.UserField .changeUser {
+  width: 15vw;
+  height: 2vw;
+  position: absolute;
+  left: 1vw;
+  top: 72%;
+
+  font-size: 1.5vw;
+
+  background-color: orangered;
+  color: white;
+
+  position: absolute;
+
+  border-radius: 0.5vw;
+
+  border-color: orangered;
+
+  padding: 0;
+
+  z-index: 0;
+}
+
+.UserField .check:checked~input[type="button"] {
+  z-index: 2;
+}
+
+.UserField .check:checked~input[type="text"] {
+  border: solid;
+  pointer-events: all;
+  border-color: orangered;
+}
+
+.articlesUser {
+  position: absolute;
+  margin: auto;
+
+  top: 15vw;
+
+  width: 100%;
+  height: calc(100% - var(--logo-width-User));
+}
+
+.articlesUser a {
+  color: black;
+}
+
+.articlesUser ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+.articlesUser div {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  outline: 1.5px solid orangered;
+  height: 31vw;
+  width: calc(100%/4.55);
+  display: inline-flex;
+
+  margin-right: 1%;
+  margin-bottom: 1%;
+
+  border-radius: 10px;
+
+  transition: all 1s;
+
+  cursor: pointer;
+
+  box-shadow: 0px 1px 6px black;
+}
+
+.articlesUser div:hover {
+  position: static;
+  transform: scale(1.025);
+  box-shadow: 0px 1px 5vw orangered;
+}
+
+.articlesUser ul div li {
+  word-break: break-word;
+  width: 100%;
+  height: 100%;
+}
+
+.articlesUser img {
+  display: flex;
+  align-self: center;
+  margin: auto;
+  width: 20vw;
+  height: 20vw;
+  background-size: 20vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.articlesUser h1 {
+  margin: 0;
+
+  font-size: 2vw;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.articlesUser p {
+  margin: 0;
+
+  font-size: 1.5vw;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.UserEmail {
+  left: calc(50% - 10vw) !important;
+}
+
+.UserEmail h2 {
+  position: absolute;
+
+  padding-right: 5vw;
+}
+
+.UserEmail h2 {
+  position: absolute;
+
+  padding-right: 5vw;
+}
+
+.UserOther {
+  left: calc(70% - 10vw) !important;
+}
+
+.UserOther input {
+  width: 91.5% !important;
+  height: 27.5% !important;
+}
+
+.UserOther .deleteUser {
+  top: 40% !important;
+  width: 45% !important;
+
+  font-size: 1.2vw;
+}
+
+.UserOther .logOutUser {
+  top: 40% !important;
+  width: 45% !important;
+  left: 51.5%;
+
+  font-size: 1.2vw;
+}
+
+.UserOther .changePasswordOther {
+  top: 70% !important;
+}
+
+#two {
+  display: none;
+}
+
+#one:hover {
+  display: none;
+}
+
+#one:hover~#two {
+  z-index: 100;
+
+  display: block;
+}
+
+#two:hover {
+  z-index: 100;
+
+  display: block;
+}
+
+#four {
+  display: none;
+}
+
+#three:hover {
+  display: none;
+}
+
+#three:hover~#four {
+  z-index: 100;
+
+  display: block;
+}
+
+#four:hover {
+  z-index: 100;
+
+  display: block;
+}
+
+@media (min-width:1025px) {
+  .articlesUser ul {
+    width: 98%;
+
+    padding-left: 1.5%;
+    padding-right: 0.5%;
+  }
+
+  .articlesUser div {
+    padding: 1%;
+    width: calc(100%/4.55);
+  }
+
+  .UserField .check {
+    top: 73%;
+    left: 85%;
+  }
+
+  .UserField .nameInputUser {
+    top: 3.75vw;
+    left: 1vw;
+  }
+}
+
+@media (max-width:1025px) {
+
+  .articlesUser h1 {
+    margin-top: 2vw;
+  }
+
+  .articlesUser ul {
+    width: 98.5%;
+
+    padding-left: 1.5%;
+    padding-right: 0;
+  }
+
+  .articlesUser div {
+    padding: 2%;
+    width: calc(100%/3.55);
+  }
+
+  .UserField .check {
+    top: 70%;
+    left: 84%;
+  }
+
+  .UserField .nameInputUser {
+    top: 3.75vw;
+    left: 0.5vw;
+  }
+}
+
+@media (max-width:480px) {
+
+  .articlesUser h1 {
+    margin-top: 3vw;
+  }
+
+  .articlesUser div:hover {
+    transform: scale(1.15);
+  }
+
+  .headerUser .userNameUser {
+    padding-top: 1vw;
+  }
+
+  .articlesUser ul {
+    width: 98%;
+
+    padding-left: 2%;
+    padding-right: 0;
+  }
+
+  .articlesUser div {
+    padding: 3%;
+    margin: 2%;
+    width: calc(100%/2.55);
+  }
+
+  .UserField .check {
+    top: 65%;
+    left: 81.5%;
+  }
+
+  .UserField .nameInputUser {
+    top: 3.25vw;
+    left: 0vw;
+  }
+}
