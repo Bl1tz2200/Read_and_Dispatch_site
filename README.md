@@ -36,7 +36,7 @@
     <h4>
       <ul>
         <li>
-          Password and other User's credentials are sended without any hashing or encryption. <br>
+          Password and other User's credentials are sended to backend and stored inside DB without any hashing or encryption. <br>
           It could cause troubles with safety. 
         </li>
         <br>
