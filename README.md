@@ -47,6 +47,11 @@
           Function getDispatches() in <b>Frontend/Dispatcher/Dispatcher.jsx</b> get all ids of dispatches from DB. <br>
           It could cause troubles with optimization and page rendering if there would be a lot of dispatches. 
         </li>
+        <br>
+        <li>
+          Dispatches are saved in the same directory as <b>main.go</b> thats why <b>main.go</b> should have permission to edit it's directory. <br>
+          This type of saving can cause troubles with memory if there would be a lot of dispatches. 
+        </li>
       </ul>
     </b>
 </div>
