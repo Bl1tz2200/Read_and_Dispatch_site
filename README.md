@@ -1,9 +1,8 @@
 <div>
   <h1>Read_and_Dispatch_site</h1>
   <p>I made site where you can publist your photos with description. For an API I used golang Gin. I made account registration, log in and authentication too</p>
-  
 </div>
-
+<br>
 <div>
   <h1>How to start using?</h1>
   <p>
