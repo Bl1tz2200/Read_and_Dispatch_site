@@ -8,12 +8,16 @@
   <p>
     Be sure, that you have already installed <i>MySql DB</i> server. <br>
     It should work on the default port <strong>3306</strong> <br>
-    (you can change port, but then you should change port inside <b>main.go</b> code) <br>
+    (you can change port, but then you should change port inside <b>main.go</b>) <br>
+    <br>
+    After connecting to the DB enter <b>Backend/DB</b> directory and run <b>Users_DB.sql</b> script to create Users_DB.<br>
+    This DB will store User's credentials and ids of dispatches in tables <strong>Users</strong> and <strong>Users_Dispatches</strong><br>
+    (All Users have unique UserName and UserEmail. All dispatches have unique ID)<br>
     <br>
     For running backend you should install <i>Golang</i> <br>
     For running frontend you should use <i>Vite.js</i> with <i>React</i> (without <i>Typescript</i>)<br>
     <br>
-    To run backend you should enter <b>Backend</b> directory with <b>main.go</b> and <b>go.mod</b> and then write in console: <br>
+    To run backend you should enter <b>Backend/Golang</b> directory with <b>main.go</b> and <b>go.mod</b> and then write in console: <br>
     <pre>
        $  go get . 
        $  go run . </pre>
