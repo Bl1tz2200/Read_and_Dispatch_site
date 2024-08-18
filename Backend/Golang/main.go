@@ -1142,16 +1142,13 @@ func resetPassword(c *gin.Context) { // Endpoint to reset password
 /* <Variables init> */
 
 // JWT vars (We will need them to generate and decode JWT tokens)
-var jwtKey = []byte(os.Getenv("SECRET_KEY"))
-var jwtEmailKey = []byte(os.Getenv("ANOTHER_SECRET_KEY"))
-
-//"thats_mine_dumb_secret_key"
-//"thats_mine_second_dumb_secret_key"
+var jwtKey = []byte(os.Getenv("SECRET_KEY"))              // Set SECRET_KEY as environment variable
+var jwtEmailKey = []byte(os.Getenv("ANOTHER_SECRET_KEY")) // Set ANOTHER_SECRET_KEY as environment variable
 
 // SMTP vars (We will need them to send email with password-reset link)
-var smtp_username = os.Getenv("SMTPUSER")
-var smtp_password = os.Getenv("SMTPPASS")
-var smtp_host_ip = os.Getenv("SMTPHOST")
+var smtp_username = os.Getenv("SMTPUSER") // Set SMTPUSER as environment variable
+var smtp_password = os.Getenv("SMTPPASS") // Set SMTPPASS as environment variable
+var smtp_host_ip = os.Getenv("SMTPHOST")  // Set SMTPHOST as environment variable
 var smtp_sender_mail = "from@example.com"
 
 // Fronted url (We will need it to create password-reset link)
@@ -1159,8 +1156,8 @@ var frontend_url = "http://localhost:5173/password-change" // Don't forget to ad
 
 // MySql vars (We will need them to get access to MySql DB)
 var db *sql.DB
-var db_user = os.Getenv("DBUSER")
-var db_password = os.Getenv("DBPASS")
+var db_user = os.Getenv("DBUSER")     // Set DBUSER as environment variable
+var db_password = os.Getenv("DBPASS") // Set DBPASS as environment variable
 var db_host_ip = "127.0.0.1:3306"
 
 /* </Variables init> */
