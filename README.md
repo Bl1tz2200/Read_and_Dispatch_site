@@ -53,13 +53,13 @@
 <br>
 <div align="center">
   <h1>Screenshots</h1>
-  <img src="https://github.com/user-attachments/assets/91cdb310-ebae-4961-826b-f5b85036b7c3" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/6c7391a4-d4d5-4a9f-9824-c6a35a4eb839" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/18b76a99-28ec-4875-babc-91932f05b10d" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/22775c42-7d55-46bf-ae31-eee12c1290f6" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/f4045571-bad3-4919-8ad5-e80fd98b6901" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/e4e7a1a6-1ca9-426f-a83d-d5788a98d947" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/879a3889-4696-41a2-b01b-49edd5c7fb97" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/5dbef3d3-95c3-4da1-8d23-3db72a6de859" height="130vw" width="260vw">
-  <img src="https://github.com/user-attachments/assets/a7885475-bcae-43e4-8ae6-8d8e6d365a06" height="130vw" width="260vw">
+  <img src="https://github.com/user-attachments/assets/91cdb310-ebae-4961-826b-f5b85036b7c3" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/6c7391a4-d4d5-4a9f-9824-c6a35a4eb839" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/18b76a99-28ec-4875-babc-91932f05b10d" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/22775c42-7d55-46bf-ae31-eee12c1290f6" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/f4045571-bad3-4919-8ad5-e80fd98b6901" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/e4e7a1a6-1ca9-426f-a83d-d5788a98d947" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/879a3889-4696-41a2-b01b-49edd5c7fb97" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/5dbef3d3-95c3-4da1-8d23-3db72a6de859" height="135vw" width="270vw">
+  <img src="https://github.com/user-attachments/assets/a7885475-bcae-43e4-8ae6-8d8e6d365a06" height="135vw" width="270vw">
 </div>
