@@ -36,7 +36,7 @@
   </p>
   <br>
   <h3>Notice:</h3>
-    <h4>
+    <b>
       <ul>
         <li>
           Password and other User's credentials are sended to backend and stored inside DB without any hashing or encryption. <br>
@@ -48,7 +48,7 @@
           It could cause troubles with optimization and page rendering if there would be a lot of dispatches. 
         </li>
       </ul>
-    </h4>
+    </b>
 </div>
 <br>
 <div align="center">
