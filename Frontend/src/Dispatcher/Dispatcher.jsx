@@ -74,14 +74,9 @@ export function Dispatcher() { // Main page where users can see all dispatches
       }
 
     }).then(ids => {
-      if (ids) { // If no errors
+      if (ids) { // If there are ids
 
         setdispatchIds(ids)
-
-      } else { // If error appeared
-
-        alert("Something went wrong on a server! Try again later")
-        window.location.reload()
 
       }
     })
