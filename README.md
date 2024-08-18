@@ -52,7 +52,7 @@
 </div>
 <br>
 <div align="center">
-  <h1>Screenshots</h1>
+  <h1 align="left">Screenshots</h1>
   <img src="https://github.com/user-attachments/assets/91cdb310-ebae-4961-826b-f5b85036b7c3" height="135vw" width="270vw">
   <img src="https://github.com/user-attachments/assets/6c7391a4-d4d5-4a9f-9824-c6a35a4eb839" height="135vw" width="270vw">
   <img src="https://github.com/user-attachments/assets/18b76a99-28ec-4875-babc-91932f05b10d" height="135vw" width="270vw">
