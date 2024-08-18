@@ -29,7 +29,7 @@
        $  npm install  
        $  npm run dev </pre>
     It will install all <i>React</i> dependencies and run frontend on <strong>http://localhost:5173</strong> <br>
-    (you can change server's ip and port inside <b>vite.config.js</b>) <br>
+    (you can change server's ip and port inside <b>vite.config.js</b>, but then you should change it inside backend's <b>main.go</b>) <br>
     <br>
     <strong><em>After all you will get working website where you can post and read posts!</em></strong>
     <br>
