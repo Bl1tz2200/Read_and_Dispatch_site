@@ -56,10 +56,10 @@
   <strong>
     <ul>
       <li>
-         <a href="https://dev.to/wchr/create-api-with-gin-in-golang-part-1-i7d">How to create Golang API</a>
+         <a href="https://go.dev/doc/tutorial/web-service-gin">Tutorial about Golang Gin RESTful API</a>
       </li>
       <li>
-         <a href="https://go.dev/doc/tutorial/web-service-gin">Tutorial about Golang Gin RESTful API</a>
+         <a href="https://dev.to/wchr/create-api-with-gin-in-golang-part-1-i7d">How to create Golang API</a>
       </li>
       <li>
          <a href="https://go.dev/doc/tutorial/database-access">Tutorial about working with DB on Golang</a>
