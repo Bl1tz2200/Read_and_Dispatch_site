@@ -51,6 +51,29 @@
     </b>
 </div>
 <br>
+<div>
+  <h1>What I've read while making this site</h1>
+  <strong>
+    <ul>
+      <li>
+         <a href="https://dev.to/wchr/create-api-with-gin-in-golang-part-1-i7d">How to create Golang API</a>
+      </li>
+      <li>
+         <a href="https://go.dev/doc/tutorial/web-service-gin">Tutorial about Golang Gin RESTful API</a>
+      </li>
+      <li>
+         <a href="https://go.dev/doc/tutorial/database-access">Tutorial about working with DB on Golang</a>
+      </li>
+      <li>
+         <a href="https://dev.to/sanjayttg/jwt-authentication-in-react-with-react-router-1d03">How to create JWT auth provider with React-router</a>
+      </li>
+      <li>
+         <a href="https://dev.to/devkiran/how-to-send-an-email-with-golang-using-smtp-1ino">How to send email with Golang</a>
+      </li>
+    </ul>
+  </strong>
+</div>
+<br>
 <div align="center">
   <h1 align="left">Screenshots</h1>
   <img src="https://github.com/user-attachments/assets/91cdb310-ebae-4961-826b-f5b85036b7c3" height="135vw" width="270vw">
