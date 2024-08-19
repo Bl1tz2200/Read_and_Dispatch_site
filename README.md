@@ -24,7 +24,7 @@
     It will install all <i>Go</i> dependencies and run backend on <strong>http://localhost:8080</strong> <br>
     (you can change it inside <b>main.go</b>, but then you should change it inside frontend's <b>main.jsx</b>) <br>
     <br>
-    To run frontend you should enter <b>Frontend</b> directory with <b>package.json</b> and other files, then write in console:
+    To run frontend you should enter <b>Frontend</b> directory with <b>package.json</b> and other files, then write in console: <br>
     <pre>
        $  npm install  
        $  npm run dev </pre>
