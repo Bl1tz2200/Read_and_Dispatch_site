@@ -48,6 +48,11 @@
         </li>
         <br>
         <li>
+          Backend provides only 1 JWT token (access token) valid for 24 hours, without refresh token.
+          It could cause troubles with auth safety.
+        </li>
+        <br>
+        <li>
           Function getDispatches() in <b>Frontend/Dispatcher/Dispatcher.jsx</b> get all ids of dispatches from DB. <br>
           It could cause troubles with optimization and page rendering if there would be a lot of dispatches. 
         </li>
