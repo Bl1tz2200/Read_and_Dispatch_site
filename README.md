@@ -17,17 +17,19 @@
     For running backend you should install <i>Golang</i> <br>
     For running frontend you should use <i>Vite.js</i> with <i>React</i> (without <i>Typescript</i>)<br>
     <br>
-    To run backend you should enter <b>Backend/Golang</b> directory with <b>main.go</b> and <b>go.mod</b> and then write in console: <br>
+    To run backend you should enter <b>Backend/Golang</b> directory with <b>main.go</b> and <b>go.mod</b> and then write in console:
+    <br>
     <pre>
-       $  go get . 
-       $  go run . </pre>
+       $  go get .
+       $  go run .</pre>
     It will install all <i>Go</i> dependencies and run backend on <strong>http://localhost:8080</strong> <br>
     (you can change it inside <b>main.go</b>, but then you should change it inside frontend's <b>main.jsx</b>) <br>
     <br>
-    To run frontend you should enter <b>Frontend</b> directory with <b>package.json</b> and other files, then write in console: <br>
+    To run frontend you should enter <b>Frontend</b> directory with <b>package.json</b> and other files, after that write in console:
+    <br>
     <pre>
-       $  npm install  
-       $  npm run dev </pre>
+       $  npm install
+       $  npm run dev</pre>
     It will install all <i>React</i> dependencies and run frontend on <strong>http://localhost:5173</strong> <br>
     (you can change server's ip and port inside <b>vite.config.js</b>, but then you should change it inside backend's <b>main.go</b>) <br>
     <br>
